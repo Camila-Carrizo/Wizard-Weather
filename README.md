@@ -5,7 +5,7 @@
 
 ### Objetivo
 
-WizardWeather es un pequeño proyecto que desarrollé para practicar y mejorar mis habilidades en **HTML, CSS y JavaScript**, así como profundizar en el uso de **APIs y promesas.**
+WizardWeather es un pequeño proyecto que desarrollé para practicar y mejorar mis habilidades en **HTML, CSS y JavaScript**, así como profundizar en el uso de ** APIs y promesas. **
 
 ### Participantes
 
