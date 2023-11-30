@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWhiz</title>
+    <link rel="stylesheet" href="css/syle.css">
+</head>
+<body>
+
+    <!--input de busqueda y nombre de la ciudad-->
+    <main id="main">
+        
+        <section id="inicio">
+            <h1>WeathetWhiz</h1>
+            <h2>Consultor de clima</h2>
+        </section>
+
+        <section id="busqueda">
+            <input id='input' type="text" placeholder="Buscar Ciudad...">
+            <h3 id="nombre-ciudad"></h3>
+            
+        </section>
+        <p class="error" style="display: none"></p>    
+         <!--resultados del clima-->
+        <section id="resultados" style="display: none;">
+            <button  id="btn-despliegue"><img src="imgs/mas.png" alt="Desplegar Detalles"></button>
+             <!--se muestra el clima-->
+            <article id="clima-de-hoy">
+                <h3 id="fecha-actual">15 de noviembre</h3>
+                <h1 id="nombre-clima">lluvioso</h1>
+                <img src="" alt="icono-clima">
+                <h2 id="temperatura">25°C</h2>
+                
+            </article>
+            
+             <!--desplegalble con mas detalles e info del clima-->
+            <article id="desplegable">
+                <div id="max">
+                    <h3></h3>
+                    <h2></h2>                
+                </div>
+                <div id="min">
+                    <h3></h3>
+                    <h2></h2>
+                </div>
+                 <!--clima por hotas-->
+                <div id="info-met">
+                    <span id="span-horizontal">
+    
+                    </span>
+                    <span id="span-vertical">
+    
+                    </span>
+                    <div id="clima-por-hora">
+                        <h3></h3>
+                        <h3></h3>
+                        <!--Se agregan las horas desde la api-->
+                    </div>
+                </div>
+                
+            </article>
+        </section>
+    </main>
+
+    
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

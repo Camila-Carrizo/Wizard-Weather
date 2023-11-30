@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background-color: black;
+font-family: 'Red Rose';
+
+}
+
+h1, h2, h3, h4, p {
+    font-weight: normal;
+}
+
+main{
+    background-image: url(../imgs/fondo-default.png);
+    background-size: cover;
+    height: 611px;
+    width: 957px;
+    background-repeat: no-repeat;
+    margin: auto;
+    padding-top:52px;
+    position: relative;
+    transition: background-image 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    
+}
+
+    #inicio {
+        position: absolute;
+        height: 465.41px;
+        width: 881.24px;
+        margin: auto;
+        color: #0f0f0f;
+        left: 5%;
+        top:17%;
+        text-align: end;
+        padding-top: 350px;
+        font-size: 40px;
+        text-shadow: 0 4px 8px rgba(255, 255, 255, 1); 
+        
+    }
+
+    #btn-despliegue, .btn-default{
+        height: 40px;
+        width: 40px;
+        border-radius: 20px;
+        position: absolute;
+        left: 855px;
+        top: -18px;
+        border: none;
+        background-color: #CCCCCC;
+        padding-top: 1.9px;
+        transition: background-color 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+       
+    }
+
+    
+    #btn-despliegue:hover{
+        cursor: pointer;
+    }
+    
+
+    #busqueda, .busqueda-default{
+        height: 25px;
+        font-size: 25px;
+        display: flex;
+        padding-left: 41px;  
+        color: #292929;
+        transition: background-color 3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              color 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    }
+
+        #input, .input-default {
+            width: 316.34px;
+            height: 25.66px;
+            border-radius: 8px;
+            border: none;
+            background-image: url(../imgs/busqueda.png);            
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding: 7px 0px 1px 38.74px;
+            background-position: 6.83px 1px;
+            margin-top: 4px;
+            font-size: 22px;
+            font-family: 'Red Rose';
+            font-weight: normal;
+            background-color: rgba(143, 143, 143, 0.40); 
+            box-shadow: 0 4px 4px rgba(255, 255, 255, 0.36);
+            color: rgb(15, 15, 15);
+            transition: background-color 0.9s cubic-bezier(0.25, 0.1, 0.25, 1),
+              box-shadow 3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              color 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        
+        #input:focus {
+            outline: none;
+            
+        }
+            #input::placeholder{
+                font-size: 20px;
+                font-weight: lighter;
+                color: rgba(255, 255, 255, 0.56);    
+                
+            }
+
+        #nombre-ciudad{
+            font-size: 25px;
+            margin-left: 22.87px;  
+            text-shadow: 0 4px 1px #fff;       
+        }
+    
+    .error {
+        height: 0px;
+        color: rgb(255, 40, 40);
+        font-size: 15px;
+        margin: 20px 0px 30px 42px;
+        transition: opacity 0.5s ease;
+    }
+
+    #resultados, .resultados-default {
+            height: 465.41px;
+            width: 881.24px;
+            margin: 24.09px auto 0px auto;
+            display: flex;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.31); 
+            color: #292929;
+            transition: background-color 3s cubic-bezier(0.25, 0.1, 0.25, 1),
+              color 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+
+        #clima-de-hoy{
+            width: 397.34px;
+            height: 365px;
+            margin: auto;
+            text-align: center;
+        }
+        
+    
+          
+    
+        #clima-de-hoy h1 {
+            font-size: 50px;
+            margin-bottom: 4px;
+            
+        }
+        
+        #clima-de-hoy h2 {
+            font-size: 90px;
+            margin-top: 4px;
+            
+        }
+        
+        #clima-de-hoy h3 {
+            font-size: 30px;
+            margin-bottom: 4px;
+        }
+        
+
+        /*Distintos Climas*/
+
+        .lluvioso-mañana{
+            background-image: url(../imgs/bgi-lluvioso-mañana.png);            
+        }
+
+        .lluvioso-tarde{
+            background-image: url(../imgs/lluvioso-tarde.png);
+            
+        }
+
+        .lluvioso-noche{
+            background-image: url(../imgs/lluvioso-noche.png);
+            
+        }
+
+        .tormenta-mañana {
+            background-image: url(../imgs/tormenta-mañana.png);
+
+        }
+
+        .tormenta-tarde {
+            background-image: url(../imgs/tormenta-tarde.png);
+
+        }
+
+        .tormenta-noche {
+            background-image: url(../imgs/tormenta-noche.png);
+
+        }
+
+        .soleado-mañana {
+            background-image: url(../imgs/caluroso-mañana.png);
+
+        }
+        
+        .soleado-tarde {
+            background-image: url(../imgs/caluroso-tarde.png);
+        }
+
+        .soleado-noche {
+            background-image: url(../imgs/caluroso-noche.png);
+
+        }
+        .nieve-mañana {
+            background-image: url(../imgs/nieve-mañana.png);
+
+        }
+
+        .nieve-tarde {
+            background-image: url(../imgs/nieve-tarde.png);
+
+        }
+
+        .nieve-noche {
+            background-image: url(../imgs/nieve-noche.png);
+
+        }
+
+        .viento-mañana {
+            background-image: url(../imgs/viento-mañana.png);
+
+        }
+
+        
+        .viento-tarde {
+            background-image: url(../imgs/viento-tarde.png);
+        }
+
+        
+        .viento-noche {
+            background-image: url(../imgs/viento-noche.png);
+
+        }
+
+        
+        .nublado-mañana {
+            background-image: url(../imgs/nublado-mañana.png);
+        }
+
+        
+        .nublado-tarde {
+            background-image: url(../imgs/nublado-tarde.png);
+        }
+
+        
+        .nublado-noche {
+            background-image: url(../imgs/nublado-noche.png);
+
+        }
+
+        .lluvioso-mañana {
+            background-image: url(../imgs/bgi-lluvioso-mañana.png);
+        }
+
+        
+        .lluvioso-tarde {
+            background-image: url(../imgs/lluvioso-tarde.png);
+        }
+
+        
+        .lluvioso-noche {
+            background-image: url(../imgs/lluvioso-noche.png);
+
+        }
+
+        .default {
+            background-image: url(../imgs/default-bgi.png);
+        }
+
+        /*BOTONES DE DESPLIEGUE*/
+        
+    #btn-despliegue.btn-tormenta {
+            background-color: #898989;
+
+        }
+
+        #btn-despliegue.btn-soleado{
+            background-color: #FFC38C;
+
+        }
+
+
+        #btn-despliegue.btn-nieve{
+            background-color: #BCCFFF;
+
+        }
+
+        #btn-despliegue.btn-viento{
+            background-color: #C7D0FF;            
+        }
+
+        #btn-despliegue.btn-nublado{
+            background-color: #5F7492;
+        }
+
+        /*BUSQUEDAS*/
+        
+        #busqueda.busqueda-tormenta, #busqueda.busqueda-nieve, #busqueda.busqueda-viento{
+            color: #000;
+        }
+
+        #busqueda.busqueda-soleado{
+            color: #ED6100;
+        }
+
+        #busqueda.busqueda-nublado{
+            color: #2F4C74
+        }
+
+        /*INPUTS*/
+        
+        #input.input-tormenta{
+            background-color: rgba(9, 9, 9, 0.42);
+            color: #fff;
+            font-weight: lighter;
+        }
+
+   
+
+        #input.input-soleado{
+            background-color: rgba(255, 149, 50, 0.7);
+        }
+
+        #input.input-nieve{
+            background-color: rgba(188, 207, 255, 0.3);
+        }
+
+        #input.input-viento{
+            background-color: rgba(199, 208, 255, 0.12); 
+
+        }
+
+        #input.input-nublado{
+            background-color: rgba(49, 67, 92, 0.25);
+        }
+
+        /*RESULTADOS*/
+        
+        #resultados.resultados-tormenta{
+            background-color: rgba(9, 9, 9, 0.65); 
+            color: #969797;
+        }
+
+        #resultados.resultados-soleado{
+            background-color: rgba(250, 177, 151, 0.51);
+            color: #ED6100
+        }
+
+        #resultados.resultados-nieve, #resultados.resultados-viento{
+            background-color: rgba(211, 236, 231, 0.43);
+            color: #292929
+
+        }
+
+        #resultados.resultados-nublado{
+            background-color: rgba(62, 119, 122, 0.31);
+            color: #042046
+        }
+
+       
+      
+
+      
