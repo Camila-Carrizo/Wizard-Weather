@@ -1,4 +1,4 @@
-# WizardWeater
+# WizardWeather
 
 ## 🌤️ Página web para consultar el clima de una ciudad y más detalles meteorológicos. 🌤️
 
